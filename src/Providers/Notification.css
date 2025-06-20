@@ -1,0 +1,33 @@
+/* Notification.css */
+.notification-container {
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 90%;
+}
+
+.notification {
+    padding: 12px 20px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease-out;
+}
+
+.notification.success {
+    background-color: #66c04a;
+}
+
+.notification.warning {
+    background-color: #bb8e4f;
+}
+
+.notification.error {
+    background-color: #be4848;
+}
